@@ -20,6 +20,7 @@ const iconMap = {
   "50d": "fog.png",
   "50n": "fog.png"
 };
+const main = document.querySelector(".main");
 
 async function fetchweather() {
   const inputval = document.getElementById("input").value;
@@ -37,6 +38,9 @@ async function fetchweather() {
   document.getElementById("pressure-measure").textContent = `${response.main.pressure} hPa`;
   document.getElementById("wind-measure").textContent = `${response.wind.speed} m/s`;
   document.getElementById("visibility").textContent = `${response.visibility / 1000} km`;
+
+  // Show main content after loading
+  document.querySelector(".main").style.display = "flex";
   const sunrise = new Date(response.sys.sunrise * 1000);
   const sunset = new Date(response.sys.sunset * 1000);
 
