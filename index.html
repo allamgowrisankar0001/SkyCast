@@ -20,6 +20,7 @@
 </head>
 
 <body>
+   
     <header>
         <nav>
             <ul>
@@ -29,7 +30,11 @@
             </ul>
         </nav>
     </header>
-    <main>
+     <div id="search-placeholder" style="display:none; text-align:center; margin-top:60px; font-size:1.3rem; color:#22815e; font-family:'Poppins',sans-serif;">
+        <i class="fa-solid fa-magnifying-glass-location" style="font-size:2.5rem;"></i>
+        <div style="margin-top:10px; width: 90vw;margin: auto;">Search a city to see the weather.<br>Type a city name and press the search button.</div>
+    </div>
+    <main class="main">
         
         <div class="divdiv">
 
@@ -133,5 +138,93 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 </body>
+
+</html>                24C
+            </div>
+            <p class="temp-p">Feels like <span id="feels">30 °C</span></p>
+            <div class="div-cont con1">
+            </div>
+            <div class="div-cont con2">
+            </div>
+            <div class="div-cont con3">
+            </div>
+            <div class="hl">
+                <p>High: <span id="high">27 C</span></p>
+                <p>Low: <span id="low">22 C</span></p>
+            </div>
+        </section>
+        <section class="Today-Week">
+            <h3>Today/Week</h3>
+            <div class="days-grid">
+               
+            </div>
+        </section>
+    </div>
+
+        <section class="highlight">
+            <h1>Today's Highlight</h1>
+            <div class="highlight-grid">
+                <div class="humidity">
+                    <h3>Humidity</h3>
+                    <img src="humidity.png" alt="">
+                    <div>
+                        <p id="humidity-measure">22</p>
+                    </div>
+                </div>
+                <div class="humidity">
+                    <h3>Pressure</h3>
+                    <img src="pressure.png" alt="">
+                    <div>
+                        <p id="pressure-measure">22</p>
+                    </div>
+                </div>
+                <div class="humidity">
+                    <h3>Wind Status</h3>
+                    <img src="wind-status.png" alt="">
+                    <div>
+                        <p id="wind-measure">22</p>
+                    </div>
+                </div>
+                <div class="humidity">
+                    <h3>Visibility</h3>
+                    <img src="visibility.png" alt="">
+                    <div>
+                        <p id="visibility">22</p>
+                    </div>
+                </div>
+                    <div class="humidity">
+                        <h3>Sunrise</h3>
+                        <i class="wi wi-sunrise" style="font-size: 5.5rem; color: #FFD700;"></i>
+                        <div>
+                            <p id="sunrise">--:--</p>
+                        </div>
+                    </div>
+                    <div class="humidity">
+                        <h3>Sunset</h3>
+                        <i class="wi wi-sunset" style="font-size: 5.5rem; color: #FF8C00;"></i>
+                        <div>
+                            <p id="sunset">--:--</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- <section class="riseset">
+            <p>🌅 Sunrise: <span id="sunrise"></span></p>
+<p>🌇 Sunset: <span id="sunset"></span></p>
+
+        </section> -->
+        <section class="map-section">
+  <h2>Weather Map</h2>
+  <div id="weather-map" style="height: 400px; width: 100%; border-radius: 15px;"></div>
+</section>
+
+
+    </main>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</body>
+
 
 </html>
